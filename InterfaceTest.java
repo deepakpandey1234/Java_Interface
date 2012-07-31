@@ -11,7 +11,7 @@ public class InterfaceTest {
 
     interface  InterfaceSub  extends  InterfaceA, InterfaceB {            }
 
-    public static class Xyz implements  InterfaceSub {
+    public class Xyz implements  InterfaceSub {
 
          public   void  output() {
             System.out.println( "output in class Xyz." );
@@ -30,7 +30,7 @@ public class InterfaceTest {
     }
             
     public   static   void  main(String[] args) {
-           Xyz xyz = new Xyz();
+           Xyz xyz = new InterfaceTest().new Xyz();
            xyz.output();
            xyz.outputLen(1);
    }
